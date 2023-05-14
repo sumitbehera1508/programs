@@ -12,7 +12,7 @@ match n:
     case 2:
         #Write
         with open("new.csv",'w',newline='') as file:
-            writer = csv.writer( file,delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            writer = csv.writer( file,delimiter=',',)
             k = int(input("this csv has 3 col ,enter : "))
             for i in range(0,k):
                 arr= input("enter string separated by space: ")
