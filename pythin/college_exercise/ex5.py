@@ -1,7 +1,7 @@
 #5. Write program to create and read from CSV file.
 import csv
 
-n = int(input("1.read \n2.appand\nenter :"))
+n = int(input("1.read \n2.write\nenter :"))
 match n:
     case 1:
         #read
@@ -12,8 +12,8 @@ match n:
     case 2:
         #Write
         with open("new.csv",'w',newline='') as file:
-            writer = csv.writer( file,delimiter=',',)
-            k = int(input("this csv has 3 col ,enter : "))
+            writer = csv.writer(file)
+            k = int(input("enter number of rows : "))
             for i in range(0,k):
                 arr= input("enter string separated by space: ")
                 writer.writerow(arr.split(" "))
