@@ -94,7 +94,7 @@ void insertAny (int pos, int data)
 }
 int main(){
     printf("\ninsert at front\n");
-    insertFront();
+    //insertFront();
     display();
     printf("\ninsert at end \n");
     insertBack();
