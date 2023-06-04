@@ -20,8 +20,8 @@ def complete()->bool:
 arr = [0,1,2,3,4,5,6,7,8]
 left = [0,1,2,3,4,5,6,7,8]
 print("-"*100,"\n"," "*45,"start game")
+bord()
 while(complete()):
-      bord()
       p1 = int(input("player1 enter the position :"))
       if(p1 not in left):
           print("invalid Input ")
