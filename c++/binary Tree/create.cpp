@@ -66,19 +66,7 @@ void levelOrderTraversal(Node* root) {
     }
 
 }
-
-void inorder(Node * root){
-    //  L-N-R
-    if(root==NULL) return;
-    
-    //L
-    inorder(root->left);
-    //N
-    cout<<root->data<<" ";
-    //R
-    inorder(root->right);
-
-}
+ 
 
 void preorder(Node * root){
     //N-L-R
