@@ -2,10 +2,10 @@ public class exp10{
     public static void main(String[] args) {
         Book Library[] = new Book[10];
         int i =0;
-        String Author1[] ={"sumit","behera"}; 
+        String Author1[] ={"sumit","Amit","Pablo"}; 
         Book b1 = new Book(Author1,"BOOK1","#1211","OUTR","2023","BBSR","WE","IN");
         Library[i]=b1;i++;
-        String Author2[] = {"sumit"};
+        String Author2[] = {"sumit","Denish Ritche"};
         Book b2  = new Book(Author2,"BOOK2","&12k31","CET","2022","CUTTUK","org2","INDIA");
         Library[i]=b2;i++;
         String name = "sumit";

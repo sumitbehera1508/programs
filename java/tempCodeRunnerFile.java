@@ -1,0 +1,1 @@
+ams\\java\\college Exercise\\input.txt
