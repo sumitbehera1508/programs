@@ -71,6 +71,23 @@ void levelOrderTraversal(Node* root) {
 
 }
 
+bool search(Node * root , int data){
+    if(root==nullptr){
+        return false;
+    }
+    if(root->data == data){
+        return true;
+    }
+
+    if(root->data<data){
+        return search(root->right,data);
+    }
+
+    if(root->data>data){
+        return search(root->left,data);
+    }
+}
+
 int main(){
 
     Node * root = nullptr;
