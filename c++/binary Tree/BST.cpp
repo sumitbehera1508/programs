@@ -88,6 +88,30 @@ bool search(Node * root , int data){
     }
 }
 
+int min(Node * root){
+    if(root==nullptr){
+        return -1;
+    }
+
+    if(root->left==NULL){
+        return root->data;
+    }
+
+    return min(root->left);
+}
+
+int max(Node * root){
+    if(root==nullptr){
+        return -1;
+    }
+
+    if(root->right==NULL){
+        return root->data;
+    }
+
+    return max(root->right);
+}
+
 int main(){
 
     Node * root = nullptr;
