@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void heapify(int arr[],int size , int i){
@@ -19,7 +19,8 @@ void heapify(int arr[],int size , int i){
 
 class heap{
     public:
-    int arr[100],size=0;
+    int arr[100];
+    int size=0;
 
     void insert(int val){
         size++;
@@ -58,6 +59,18 @@ class heap{
 };
 
 
+int * heapSort(int arr[],int n){
+    int size = n;
+    while(size>1){
+        swap(arr[size],arr[1]);
+        size--;
+        heapify(arr,size,1);
+    }
+
+    return arr;
+}
+
+
 int main(){
     heap h1;
     cout<<"enter the number you want to enter : ";
@@ -72,4 +85,8 @@ int main(){
 
     h1.print();
     h1.deleteheap(),h1.print();
+    int * arr = heapSort(h1.arr,h1.size);
+    for(int i=0;i<h1.size;i++){
+        cout<<arr[i]<<" ";
+    }
 }
